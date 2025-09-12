@@ -1,0 +1,48 @@
+# Variables
+@baseUrl = http://localhost:3333
+
+# Health Check
+# @name healthCheck
+GET {{baseUrl}}/health
+
+###
+
+# GET rooms 
+# @name getRooms
+GET {{baseUrl}}/rooms
+
+### 
+
+# POST Create Room
+# @name createRoom
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+    "name": "Sala Teste 3",
+    "description": "Essa é uma sala de teste"
+}
+
+### 
+
+# puxa id da sala recém criada, depois de executar o createRooms
+@roomId = {{createRoom.response.body.$.roomId}}
+# puxa id da primeira sala depois de executar o getRooms
+# @roomId = {{getRooms.response.body.$.[0].id}}
+
+###
+
+# Get room questions
+# @name getQuestions
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+### 
+
+# POST Create Question
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+    "question": "Qual seu nome?"
+}

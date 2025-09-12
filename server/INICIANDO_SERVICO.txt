@@ -1,0 +1,28 @@
+verificando se o docker está parado ou em execução:
+
+- wsl -l -v
+
+iniciar docker abrindo o docker desktop
+
+Verificar containers, rodando ou não, com o comando
+- docker ps 
+ou 
+- docker os -a (mostra container inativos)
+
+Colocar para rodar o container da aplicação com o comando
+
+- docker start CONTAINER ID 
+* pode ser com o nome do container tambem
+
+iniciar a aplicação com:
+
+- npm run dev
+
+Parando container 
+
+- docker stop CONTAINER ID
+* pode ser com o nome do container tambem
+
+Parando docker e wsl(linux)
+
+- wsl --shutdown
