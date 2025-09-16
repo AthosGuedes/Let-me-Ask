@@ -80,4 +80,8 @@ npm run start
 
 > 💡 **Dica rápida:** Certifique-se de que as variáveis de ambiente e as configurações do Docker estejam corretas antes de iniciar a aplicação.
 
+--- 
+
+**Projeto da [Rocketseat](https://www.instagram.com/rocketseat/), 20ª edição do NLW.**
+
 
