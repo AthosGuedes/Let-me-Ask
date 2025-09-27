@@ -52,7 +52,11 @@ npm install
 npm run db:seed
 ```
 
-## 4. Iniciando a aplicação Backend
+## 4. Atualizar a API_Key do Gemini
+ 
+Acesse o [link](https://aistudio.google.com/app/apikey), crie a chave e adicione ela na variavel **GEMINI_API_KEY** dentro do arquivo **.env**. 
+
+## 5. Iniciando a aplicação Backend
 
 * Em **modo desenvolvimento**:
 
