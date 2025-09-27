@@ -34,7 +34,25 @@ npm install
 
    **⚠ Importante:** Os dados do `docker-compose.yml` devem coincidir com os dados do arquivo `.env`.
 
-## 3. Iniciando a aplicação Backend
+## 3. Criando banco e tabelas do banco de dados.
+
+  ```bash
+  npm run db:generate
+  ```
+
+- Execute esse comando para visualizar (dentro do navegador) o banco e as tabelas:
+
+  ```bash
+  npx drizzle-kit studio
+  ```
+  
+**Bônus:** Para preencher o banco com dados ficticios, você pode executar o comando: 
+
+```bash
+npm run db:seed
+```
+
+## 4. Iniciando a aplicação Backend
 
 * Em **modo desenvolvimento**:
 
@@ -48,7 +66,7 @@ npm run dev
 npm run start
 ```
 
-## 4. Configuração do Frontend
+## 5. Configuração do Frontend
 
 1. Acesse o diretório do frontend:
 
